@@ -1,0 +1,45 @@
+<ion-modal-view>
+<ion-header-bar>
+    <strong>TIME PICKER</strong>
+  </ion-header-bar>
+  <ion-content>
+
+<div class="row center">
+<div class="col">
+<ion-list>
+
+<ion-item ng-click="increaseHours()">
+ <button type="button" class="button button-clear button-small button-dark time_picker_arrows">
+        <i class="icon ion-chevron-up"></i></button></ion-item>
+<ion-item>		<a ng-model="hour">{{hour}}</a></ion-item>
+<ion-item ng-click="decreaseHours()"><button type="button" class="button button-clear button-small button-dark time_picker_arrows">
+        <i class="icon ion-chevron-down"></i></button></ion-item>
+</ion-list></div>
+<div class="col">
+<ion-list>
+
+<ion-item  ng-click="increaseMinute()">
+ <button type="button" class="button button-clear button-small button-dark time_picker_arrows">
+        <i class="icon ion-chevron-up"></i></button></ion-item>
+				<ion-item><a ng-model="hour">{{minute}}</a></ion-item>
+	<ion-item  ng-click="decreaseMinute()">	 <button type="button" class="button button-clear button-small button-dark time_picker_arrows">
+        <i class="icon ion-chevron-down"></i></button></ion-item>
+</ion-list></div>	
+<div class="col">
+<ion-list>
+
+<ion-item  ng-click="increaseSession()"> <button type="button" class="button button-clear button-small button-dark time_picker_arrows">
+        <i class="icon ion-chevron-up"></i></button></ion-item>
+				<ion-item><a ng-model="hour">{{ampm}}</a></ion-item>
+		 <ion-item  ng-click="decreaseSession()"><button type="button" class="button button-clear button-small button-dark time_picker_arrows">
+        <i class="icon ion-chevron-down"></i></button></ion-item>
+		</ion-list>
+</div>
+</div>
+<div class="row">
+<button class="button button-bar button-positive center" ng-click="set()">SET</button>
+<button class="button button-bar button-positive center" ng-click="closeLogin()">CLOSE</button></div>
+  </ion-content>
+
+
+</ion-modal-view>
